@@ -22,6 +22,11 @@ Based on these bottlenecks, I decided to move to the .parquet format. The benefi
 Conclusion:
 With this optimized foundation, I can now proceed with the Exploratory Data Analysis (EDA) with a much faster and more reliable pipeline.
 
+Duckdb is helping a lot to understand the data from the dataset, so follow a screenshot from the Duckdb_ui:
+![DuckDB Column Explorer from DuckDB UI](./images/column_explorer_duckdb.png)
+
+
+
 Data Quality Challenges:
 
     Schema Drift/Inconsistency: Discovered inconsistent sheet_names across the Excel source files, necessitating a metadata-driven ingestion strategy.
