@@ -20,7 +20,7 @@ The project follows the Medallion Architecture to ensure data quality and lineag
 🚀 Key Technical Decisions
 1. From CSV to Parquet (The Performance Pivot)
 
-During the EDA phase, I identified that converting .xlsx to .csv was inefficient due to:
+During the exploration phase, I identified that converting .xlsx to .csv was inefficient due to:
 
     Nested Quotes: Excessive double-quotes in text fields required complex cleaning.
 
@@ -58,7 +58,7 @@ TBD
 
     Excel files are not "read-only" friendly; using openpyxl with specific flags is vital to prevent file corruption.
 
-    Columnar storage (Parquet) is superior for public security data due to high repetition in categorical fields like "Brand" and "Color".
+    Columnar storage (Parquet) is superior for public security data due to high compression and the read speed.
 
 Developed by Arthur Moreno
 Data Engineer & Analytics Specialist
